@@ -16,6 +16,6 @@ RUN comfy node install --exit-on-fail comfyui_tinyterranodes@2.0.9
 RUN comfy model download --url https://huggingface.co/lodestones/Chroma/resolve/main/vae/diffusion_pytorch_model.safetensors --relative-path models/vae --filename ae.safetensors
 RUN comfy model download --url https://huggingface.co/silveroxides/flan-t5-xxl-encoder-only-GGUF/resolve/main/flan-t5-xxl-Q8_0.gguf --relative-path models/clip --filename flan-t5-xxl-Q8_0.gguf
 RUN comfy model download --url https://huggingface.co/silveroxides/Chroma-LoRAs/resolve/main/flash-heun-pruned/chroma-flash-heun_r80-fp32-pruned.safetensors --relative-path models/loras --filename chroma-flash-heun_r80-fp32-pruned.safetensors
-RUN comfy model download --url https://huggingface.co/silveroxides/Chroma1-HD-fp8-scaled/resolve/main/Chroma1-HD-fp8_scaled_original_hybrid_large_rev2.safetensors --relative-path models/diffusion_models --filename Chroma1-HD-fp8_scaled_original_hybrid_large.safetensors
+RUN comfy model download --url https://huggingface.co/lodestones/Chroma1-HD/resolve/main/Chroma1-HD.safetensors --relative-path models/diffusion_models --filename Chroma1-HD.safetensors
 RUN comfy model download --url https://huggingface.co/nuclear-diffusion/Loras/resolve/main/chroma/instagramreality_v1_1.safetensors --relative-path models/loras --filename instagramreality_v1_1.safetensors
 RUN comfy model download --url https://huggingface.co/Danrisi/Lenovo_UltraReal_Chroma/resolve/main/lenovo_chroma.safetensors --relative-path models/loras --filename Lenovo.safetensors
